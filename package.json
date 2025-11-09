@@ -2,7 +2,7 @@
   "name": "antzed-theme",
   "displayName": "AntZed",
   "description": "A warm light theme inspired by Anthropic's brand colors and Zed's minimalist design. Dark theme coming soon.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "TeoVoss",
   "engines": {
     "vscode": "^1.60.0"

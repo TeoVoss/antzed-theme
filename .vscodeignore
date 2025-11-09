@@ -3,3 +3,4 @@
 .gitignore
 *.vsix
 icon.svg
+CHANGELOG.md
