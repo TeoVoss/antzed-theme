@@ -1,0 +1,166 @@
+/**
+ * AntZed Theme - Custom CSS for IBM Plex Sans SC Font
+ *
+ * Applies IBM Plex Sans SC font to VS Code Workbench UI
+ * Inspired by Zed editor's minimalist design philosophy
+ *
+ * Usage:
+ * 1. Install IBM Plex Sans SC font on your system
+ * 2. Install VS Code extension: Custom CSS and JS Loader (be5invis.vscode-custom-css)
+ * 3. Add to your settings.json:
+ *    "vscode_custom_css.imports": [
+ *      "file://${userHome}/.vscode/extensions/antzed-theme/anthropic-vscode-custom.css"
+ *    ]
+ * 4. Press Cmd+Shift+P (macOS) or Ctrl+Shift+P (Windows/Linux)
+ * 5. Run "Enable Custom CSS and JS"
+ * 6. Restart VS Code
+ */
+
+/* ===== Global Font Settings ===== */
+/* Apply IBM Plex Sans SC font to the entire workbench, Zed-inspired style */
+body {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+  letter-spacing: -0.011em !important; /* Zed-style compact letter spacing */
+}
+
+/* ===== Sidebar Font ===== */
+.monaco-workbench .part.sidebar .title-label,
+.monaco-workbench .part.sidebar .title-actions,
+.monaco-workbench .part.sidebar {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Activity Bar ===== */
+.monaco-workbench .part.activitybar .action-item,
+.monaco-workbench .part.activitybar {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Title Bar ===== */
+.monaco-workbench .part.titlebar,
+.window-title {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Tabs ===== */
+.monaco-workbench .part.editor .title,
+.monaco-workbench .part.editor .tabs-container,
+.tab-label {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* Remove tab top border, keep only bottom border */
+.tab.active::before,
+.tab.active::after {
+  display: none !important;
+}
+
+.tab.active {
+  border-top: none !important;
+  border-top-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Ensure only bottom border */
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active {
+  border-top: none !important;
+  border-bottom: 2px solid #d97757 !important;
+}
+
+/* ===== Status Bar ===== */
+.monaco-workbench .part.statusbar {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 600;
+}
+
+/* ===== Breadcrumbs ===== */
+.monaco-breadcrumbs,
+.monaco-breadcrumb-item {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 400;
+}
+
+/* ===== Quick Picker and Command Palette ===== */
+.quick-input-widget,
+.monaco-inputbox,
+.monaco-list-row {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Menu ===== */
+.monaco-menu,
+.monaco-action-bar,
+.context-view {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Settings Page ===== */
+.settings-editor,
+.settings-body {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Buttons ===== */
+.monaco-button,
+.monaco-text-button {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* ===== Notifications ===== */
+.notifications-toasts,
+.notification-toast {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Welcome Page ===== */
+.welcomePage,
+.gettingStartedContainer {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Extensions Page ===== */
+.extension-editor,
+.extension-list {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Terminal (Optional: Keep monospace font) ===== */
+/* Uncomment below if you want terminal to use IBM Plex Sans SC */
+/*
+.terminal {
+  font-family: 'Poppins', 'Courier New', monospace !important;
+}
+*/
+
+/* ===== Panels (Output, Debug Console, etc.) ===== */
+.monaco-workbench .part.panel .panel-header,
+.monaco-workbench .part.panel {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Editor Hints and Hover ===== */
+.monaco-hover,
+.monaco-editor-hover,
+.suggest-widget {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Dialogs ===== */
+.monaco-dialog-box {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ===== Optional: Bolder font weight for headings ===== */
+.monaco-workbench h1,
+.monaco-workbench h2,
+.monaco-workbench h3,
+.monaco-workbench .title {
+  font-family: 'IBM Plex Sans SC', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* ===== Fine-tuning: Ensure consistency ===== */
+.monaco-workbench * {
+  font-family: inherit;
+}

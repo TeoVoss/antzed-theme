@@ -1,0 +1,48 @@
+{
+  "name": "antzed-theme",
+  "displayName": "AntZed",
+  "description": "A warm light theme inspired by Anthropic's brand colors and Zed's minimalist design. Dark theme coming soon.",
+  "version": "1.0.0",
+  "publisher": "TeoVoss",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "light",
+    "anthropic",
+    "zed",
+    "minimalist",
+    "warm",
+    "ibm plex"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "AntZed Light",
+        "uiTheme": "vs",
+        "path": "./themes/anthropic-light.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TeoVoss/antzed-theme"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#faf9f5",
+    "theme": "light"
+  },
+  "author": {
+    "name": "TeoVoss"
+  },
+  "bugs": {
+    "url": "https://github.com/TeoVoss/antzed-theme/issues"
+  },
+  "homepage": "https://github.com/TeoVoss/antzed-theme#readme"
+}
