@@ -2,7 +2,7 @@
   "name": "antzed-theme",
   "displayName": "AntZed",
   "description": "A warm light theme inspired by Anthropic's brand colors and Zed's minimalist design. Dark theme coming soon.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "TeoVoss",
   "engines": {
     "vscode": "^1.60.0"
@@ -27,7 +27,10 @@
         "uiTheme": "vs",
         "path": "./themes/anthropic-light.json"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "editor.fontFamily": "Lelix, Menlo, Monaco, 'Courier New', monospace"
+    }
   },
   "repository": {
     "type": "git",

@@ -10,7 +10,7 @@
 - 🌅 Gentle light theme perfect for extended coding sessions
 - 📝 Optimized syntax highlighting for multiple programming languages
 - 🎯 Carefully crafted UI element colors
-- 🔤 Optional IBM Plex Sans SC font integration for a modern, Zed-inspired look
+- 🔤 Optional IBM Plex Sans font integration for UI and Lelix font for editor
 
 ## 🎨 Color Palette
 
@@ -48,20 +48,28 @@
 
 ## 🔤 Optional: Font Customization
 
-For the full Zed-inspired experience with IBM Plex Sans SC fonts:
+For the full Zed-inspired experience:
 
-### 1. Install IBM Plex Sans SC Font
+### Recommended Fonts
 
-**macOS:**
+- **UI Font**: IBM Plex Sans (for workbench, sidebar, tabs)
+- **Editor Font**: Lelix (for code editing)
+
+### 1. Install Fonts
+
+**IBM Plex Sans (macOS):**
 ```bash
 brew tap homebrew/cask-fonts
 brew install font-ibm-plex-sans
 ```
 
-**Windows/Linux:**
+**IBM Plex Sans (Windows/Linux):**
 Download from [Google Fonts](https://fonts.google.com/specimen/IBM+Plex+Sans)
 
-### 2. Install Custom CSS Extension
+**Lelix Font:**
+Download from [Lelix Font Website](https://www.fontspace.com/lelix-font-f32789) and install
+
+### 2. Apply UI Font (IBM Plex Sans)
 
 1. Install [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) extension
 2. Add to your `settings.json`:
@@ -75,6 +83,15 @@ Download from [Google Fonts](https://fonts.google.com/specimen/IBM+Plex+Sans)
 3. Press `Cmd+Shift+P` (macOS) or `Ctrl+Shift+P` (Windows/Linux)
 4. Run `Enable Custom CSS and JS`
 5. Restart VS Code
+
+### 3. Apply Editor Font (Lelix)
+
+The theme automatically sets Lelix as the editor font for common file types. If you want to apply it globally, add to your `settings.json`:
+```json
+{
+  "editor.fontFamily": "Lelix, Menlo, Monaco, 'Courier New', monospace"
+}
+```
 
 ## 🚀 Usage
 
@@ -166,7 +183,8 @@ MIT License - feel free to use this theme in any way you like!
 
 - Color palette inspired by [Anthropic](https://www.anthropic.com)'s official brand guidelines
 - Design philosophy influenced by [Zed](https://zed.dev) editor's minimalist approach
-- Font: [IBM Plex Sans SC](https://fonts.google.com/specimen/IBM+Plex+Sans) by IBM
+- UI Font: [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans) by IBM
+- Editor Font: Lelix
 
 ## 📧 Feedback
 
