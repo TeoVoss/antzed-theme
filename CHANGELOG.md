@@ -49,14 +49,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## Upcoming
+## [1.1.0] - 2025-11-15
 
-### [1.1.0] - Planned
-- [ ] Dark theme variant
-- [ ] Additional theme screenshots
-- [ ] Enhanced syntax optimization for more languages
-- [ ] VS Code Marketplace listing
-- [ ] Theme icon
+### Added
+- 🌙 **Dark theme variant** with enhanced contrast
+  - Darker backgrounds for better eye comfort in low-light
+  - Brightened text colors for improved readability
+  - Enhanced syntax highlighting colors for better visibility
+  - Consistent warm color palette matching the light theme
+- 🎨 **Minimalist UI configuration** (auto-applied on theme installation)
+  - Activity bar moved to bottom (Zed-style)
+  - Status bar hidden by default
+  - Auto-hide minimap and scrollbars
+  - Clean interface with no unnecessary controls
+- 🔤 **Font enhancements**
+  - IBM Plex Sans for UI elements via custom CSS
+  - Unified 14px font size across editor, terminal, and chat
+  - Markdown preview with IBM Plex Sans and 1.75 line height
+- 📁 **File tree styling**
+  - Semi-bold font weight for better readability
+  - Subtle opacity reduction for cleaner look
+  - Enhanced hover states
+- 🌐 **Internationalization**
+  - All comments and labels converted to English
+
+### Changed
+- Improved dark theme contrast ratios from 8:1 to 12:1
+- Enhanced color brightness for comments and secondary text
+- Optimized Git decoration colors for both themes
+- Updated terminal ANSI colors for better visibility
+
+### Technical
+- Complete UI configuration via `configurationDefaults`
+- Claude Code extension font integration
+- Material Icon Theme recommended
+
+## Upcoming
 
 ### [1.2.0] - Planned
 - [ ] High contrast variant
